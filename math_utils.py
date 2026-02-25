@@ -28,12 +28,20 @@ class MathUtils:
 
         return x
 
+    # pow(base, exp, mod) works fine but for the sake of learning:
+
     @staticmethod
     def mod_exp(base, exp, mod):
-        num = base ** exp
-        return num % mod
+        res = 1
+        while (exp > 0):
+            if (exp % 2 == 1):
+                res = res * base % mod
+
+            exp = exp // 2
+
+        return res
 
 
 # Test
 print(MathUtils.extended_gcd(45, 63))
-
+print(MathUtils.mod_exp(3, 13, 10))

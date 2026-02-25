@@ -41,7 +41,3 @@ class MathUtils:
 
         return res
 
-
-# Test
-print(MathUtils.extended_gcd(45, 63))
-print(MathUtils.mod_exp(3, 13, 10))

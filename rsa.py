@@ -7,7 +7,9 @@ class RSA:
     @staticmethod
     def generate_keypair():
 
-        bit_len = 2048
+        # Use a smaller modulus for faster demo key generation.
+        # This is NOT secure for real-world use but keeps the UI responsive.
+        bit_len = 1024
         e = 65537           # common choice
 
         p = PrimeUtils.generate_prime(bit_len)

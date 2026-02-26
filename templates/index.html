@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RSA Key Generator</title>
+</head>
+<body>
+    <h1>RSA Key Generator</h1>
+
+    <section id="controls-section">
+        <h2>1. Controls</h2>
+        <p>Click "Generate keys" to create a new RSA keypair. Click "Reset" to clear the fields.</p>
+        <button id="generate-button">Generate keys</button>
+        <button id="reset-button">Reset</button>
+    </section>
+
+    <section id="keys-section">
+        <h2>2. Generated keys</h2>
+
+        <h3>Public key (e, n)</h3>
+        <p>The public key is used to encrypt data. You can share it with others.</p>
+        <div id="public-container">
+            <label for="public-key">Public Key value:</label><br>
+            <textarea id="public-key" rows="5" cols="60" readonly></textarea>
+        </div>
+
+        <h3>Private key (d, n)</h3>
+        <p>The private key is used to decrypt data. Keep it secret.</p>
+        <div id="private-container">
+            <label for="private-key">Private Key value:</label><br>
+            <textarea id="private-key" rows="5" cols="60" readonly></textarea>
+        </div>
+    </section>
+
+    <section id="explanation-section">
+        <h2>3. What are e, d, and n?</h2>
+        <ul>
+            <li><strong>n</strong>: the modulus, equal to the product of two large primes. It is shared between the public and private keys.</li>
+            <li><strong>e</strong>: the public exponent, used together with n to encrypt data or verify signatures. This value is public.</li>
+            <li><strong>d</strong>: the private exponent, used together with n to decrypt data or create signatures. This value must be kept secret.</li>
+        </ul>
+    </section>
+</body>
+<footer>
+    <script src="/static/script.js"></script>
+</footer>
+</html>

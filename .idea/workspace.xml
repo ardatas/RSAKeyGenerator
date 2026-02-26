@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52a4d3b7-e93c-4bea-b2d3-fc458db482e6" name="Changes" comment="Initial Commit">
+    <list default="true" id="52a4d3b7-e93c-4bea-b2d3-fc458db482e6" name="Changes" comment="feat: implement generate_keypair function">
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/math_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/math_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prime_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/prime_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,21 +29,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ardatas"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ardatas&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ardatas/RSAKeyGenerator.git",
-    "accountId": "74644124-1b95-49f7-8198-5a6b5a195af8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ardatas/RSAKeyGenerator.git&quot;,
+    &quot;accountId&quot;: &quot;74644124-1b95-49f7-8198-5a6b5a195af8&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="3A9aOS5SjjqSa9lxR8IYC5MZaGH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,7 +52,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.app.executor": "Run",
     "Python.math_utils.executor": "Run",
+    "Python.prime_utils.executor": "Run",
+    "Python.rsa.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -77,11 +86,56 @@
       <option name="project" value="LOCAL" />
       <updated>1772013481519</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented math functions">
+      <option name="closed" value="true" />
+      <created>1772023268615</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772023268615</updated>
+    </task>
+    <task id="LOCAL-00003" summary="reimplemented efficient modular exponent function">
+      <option name="closed" value="true" />
+      <created>1772024621232</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772024621232</updated>
+    </task>
+    <task id="LOCAL-00004" summary="implemented fermat test and generate random prime methods">
+      <option name="closed" value="true" />
+      <created>1772026285769</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772026285769</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemented Miller Rabin prime test to detect if a number is prime">
+      <option name="closed" value="true" />
+      <created>1772030237235</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772030237235</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: implement generate_keypair function">
+      <option name="closed" value="true" />
+      <created>1772032013169</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1772032013169</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="implemented math functions" />
+    <MESSAGE value="reimplemented efficient modular exponent function" />
+    <MESSAGE value="implemented fermat test and generate random prime methods" />
+    <MESSAGE value="Implemented Miller Rabin prime test to detect if a number is prime" />
+    <MESSAGE value="feat: implement generate_keypair function" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implement generate_keypair function" />
   </component>
 </project>

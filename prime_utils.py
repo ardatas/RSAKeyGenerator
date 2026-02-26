@@ -5,7 +5,7 @@ class PrimeUtils:
 
     @staticmethod
     def fermat_test(a, p):
-        if MathUtils.mod_exp(a, p) == 1:
+        if MathUtils.mod_exp(a, p-1, p) == 1:
             return True
         else:
             return False

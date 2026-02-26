@@ -4,7 +4,6 @@ class MathUtils:
     def gcd(a: int, b:int) -> int:
         if a == 0:
             return b
-        a, b = min(a, b), max(a, b)
         return MathUtils.gcd(b, a % b)
 
 
@@ -12,7 +11,7 @@ class MathUtils:
     @staticmethod
     def extended_gcd(a, b):
         if a == 0:
-            return (b, 1, 0)
+            return (b, 0, 1)
 
         gcd, x1, y1 = MathUtils.extended_gcd(b % a, a)
         x = y1 - (b // a) * x1
@@ -26,7 +25,7 @@ class MathUtils:
         if (gcd != 1):
             raise ValueError('modular inverse does not exist');
 
-        return x
+        return x % m            # avoid negative values
 
     # pow(base, exp, mod) works fine but for the sake of learning:
 
@@ -38,6 +37,7 @@ class MathUtils:
                 res = res * base % mod
 
             exp = exp // 2
+            base = base * base % mod
 
         return res
 
